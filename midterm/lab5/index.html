@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+  scroll-behavior: smooth;
+}
+body{
+            background-color: #d8e3e7;
+            margin: 100px;
+            font-family: Georgia, serif;
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        }
+
+.nav {
+  border: #2b6d73;
+  border-radius: 20px;
+  background: #bedadc;
+}
+.link {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.link a {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: rgb(9, 0, 0);
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.nav a:hover{
+  transform: scale(1.8);
+  color: rgb(8, 70, 56);
+}
+.info {
+  width: fit-content;
+  text-align: left;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+hr {
+  height: 3px;
+  width: 100%;
+  margin: 20px auto;
+  background: linear-gradient(to right, transparent,#496a74, transparent);
+}
+dl:first-of-type{
+  background: #bedadc;
+  padding: 10px;
+  border-left: 5px solid black;
+  border-radius: 12px;
+  margin: 20px;
+}
+dl ~ dl {
+  background: #bedadc;
+  padding: 20px;
+  border-left: 5px solid black;
+  border-radius: 12px;
+  margin: 20px;
+}
+.sem {
+  border-left: 5px solid black;
+  padding: 20px;
+  background: #bedadc;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.character{
+  text-align: center;
+}
+#table{
+  margin: 20px auto;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#table td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf; 
+}
+#table tr:first-child td {
+  background: #2b6d73;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+    </style>
+    <div class="nav">
+    <div class="link">
+        <a href="#educ" style="text-decoration: none;">EDUCATION</a>
+        <a href="#seminar" style="text-decoration: none;">EXPERIENCE</a>
+        <a href="#hardware" style="text-decoration: none;">HARDWARE</a>  
+        <a href="#software" style="text-decoration: none;">SOFTWARE</a>
+    </div>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <img src="Screenshot 2025-02-24 170613.png" 
+        width="250" 
+        height="250" 
+        style="border: 3px solid black; border-radius: 250px; display: block; margin: 20px auto;" >
+</head>
+<body>
+    <p id="info" class="info">
+        <b><br>Jhared Lee T. Miranda</br></b>
+        <b>Email: </b><a href="mailto:mirandajharedlee@gmail.com" target="_blank" style="text-decoration: none;">mirandajharedlee@gmail.com</a><br>
+        <b>Phone: </b> +639322671598 <br>
+        <b>Address: </b> Sta. Lucia Resettlement, Magalang, Pampanga<br>
+    </p>
+    <hr>
+    <dl>
+        <h2 class="career"><dt><b>Career Objective</b></dt></h2>
+        <dd>
+            I am capable of thinking for a solution in every problem I encounter.
+        </dd>
+    </dl>
+
+    <dl>
+        <h2 class="expertise"><dt><b> Expertise Bio</b></dt></h2>
+        <dd>
+            I have expertise in coding in java, python. I'm expert in pc building and assembling. I have interest in coding since it gives me joy.
+        </dd>
+    </dl>
+    <dl>
+        <h2 id="educ" class="educ"><dt><b>Education</b></dt></h2>
+        <dd>
+        <b>Senior High School:</b> Madapdap Resettlement Senior High School <br>
+        <b>High School:</b> Madapdap Resettlement Senior High School <br>
+        <b>Elementary:</b> Cabalantian Elementary School
+    </dl>
+    
+    <div class="sem">
+    <h2 id="seminar" class="seminar"><b>Seminar and Workshop Attended</b></h2>
+    <p>
+        <b>Sagum Aluminum and Glass, Sta. Lucia Resettlement, Magalang, Pampanga, 2024</b><br>
+        <b>Position: </b>Assistant <br>
+        <b>Job Description:</b>
+        <ul>
+        <li>Making of aluminum windows, doors, cabinets, etc.</li>
+        <li>Making of Glass doors, bathroom glass panels, etc.</li>
+        </ul>
+    </p>
+    <p>
+        <b>Introduction of Java to students, Madapdap Resettlement, Mabalacat, Pampanga, 2024</b><br>
+        Introducing Java Language to us students. Giving us basic knowledge.
+        <ul>
+            <li>History of Java</li>
+            <li>Flowchart</li>
+            <li>Symbols</li>
+        </ul>
+    </p>
+    </div>
+    <dl>
+        <h2 id="hardware" class="hardware"><dt><b>Hardware Skills</b></dt></h2>
+        <dd>
+            I somehow have knowledge about computers, phones, and other devices in basic troubleshooting. I also have knowledge in pc assembling and building.
+        </dd>
+    </dl>
+
+    <dl>
+        <h2 id="software" class="software"><dt><b>Software Skills</b></dt></h2>
+        <dd>
+            I have knowledge about coding in java, python, and basic troubleshooting.
+        </dd>
+    </dl>
+
+    <dl>
+        <h2 class="additional"><dt><b>Additional Skills</b></dt></h2>
+        <dd>
+        <ul>
+        <li>Creativity</li>
+        <li>Cricial Thinking</li>
+        <li>Problem Solving</li>
+        </ul>
+        </dd>
+    </dl>
+
+    <h2 class="character">Character References</h2>
+    <table border="0px" width="700" id="table">
+        <tr>
+            <td>FULL NAME</td>
+            <td>DESIGNATION</td>
+            <td>EMAIL</td>
+            <td>CONTACT NUMBER</td>
+        </tr>
+        <tr>
+            <td>Edsar Bondoc</td>
+            <td>Teacher</td>
+            <td>bondoc.edsar@gmail.com</td>
+            <td>09326754678</td>
+        </tr>
+        <tr>
+            <td>Elaine Carreon</td>
+            <td>Hardware Checker</td>
+            <td>carreonelaine10@gmail.com</td>
+            <td>09429447883</td>
+        </tr>
+        <tr>
+            <td>Darrlie Miranda</td>
+            <td>Glass and aluminum fabricator</td>
+            <td>darrlie97@gmail.com</td>
+            <td>09934218702</td>
+        </tr>
+    </table>
+    <a href="#top" style="text-decoration: none;">Back to top</a>    
+</body>
+</html>

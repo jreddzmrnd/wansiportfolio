@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 3%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    background-color: rgb(134, 134, 247);
+    color: white;
+    padding: 10px;
+    height: 125px;
+    padding-left: 2%;
+}
+h1:first-of-type{
+    font-size: 35px;
+}
+main{
+    margin-top: 1%;
+}
+/* nav{
+    padding: 10px;
+} */
+nav ul{
+    list-style: none;
+    float: left;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+}
+nav li{
+    width: 100%;
+    display: block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgb(94, 94, 94);
+    background-color: rgb(220, 220, 220);
+    width: 350px;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+nav li:hover{
+    background-color: rgb(134, 134, 247);
+    transform: scale(1);
+}
+span a{
+    color: black;
+}
+section{
+    text-align: justify;
+    float: left;    
+    width: 43%;
+    margin: 0%  ;
+    height: auto;
+    padding: 25px;
+}
+section h2{
+    font-size: 35px;
+}
+section p{
+    font-size: 20px;
+}
+article{
+    text-align: justify;
+    float: right;
+    width: 30%;
+    margin: 0%  ;
+    height: 6%;
+    padding: 10px;
+    background-color: rgb(40, 40, 111);
+    border-radius: 8px;
+    color: white;
+}
+footer{
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+        @media screen and (max-width: 850px) {
+            nav li, nav ul, section, article{
+                width: 100%;
+            }
+        }

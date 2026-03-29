@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 6</title>
+    <style>
+        .block input{
+            display: block;
+            /* width: 500px;
+            height: 35px;
+            padding: 5px; */
+            margin: 5px;
+        }
+        .inblock p{
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .gogol{
+            text-align: center;
+        }
+
+        .gogol img{
+            display: block;
+            margin: 0 auto;
+        }
+
+        .gogol input{
+            width: 400px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid rgb(211, 201, 201);
+        }
+        .signup {
+            width: 100%;
+        }
+
+        .name {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .signup .email {
+            width: 95%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #c9c7c7;
+        }
+
+        .sign {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgb(35, 35, 255);
+            color: white;
+            font-weight: bold;
+        }
+        .box input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            background: gainsboro;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+        }
+
+        .request {
+            background: black;
+            color: white;
+        }
+
+        .shedule {
+            background: rgb(241, 238, 238);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="width: 400px; margin: auto; padding: 20px;">
+        <div class="block">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inblock">   
+            <p>Thanks for chatting with our customer support. Would you like to take our quick survey?</p> 
+            <button>Yes</button> 
+            <button>No</button>
+        </div>
+        <div class="gogol">
+            <img src="google.png" width="155">
+            <input type="text" placeholder="Search Google or type a URL">
+        </div><br>
+
+
+        <h3>Sign up Form</h3>
+
+            <div class="signup">
+                <div class="name">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </div>
+
+                <input type="text" placeholder="Email" class="email">
+
+                <button class="sign">Sign Up</button>
+                </div>
+
+
+                <div class="box">
+                <h2>Request a ride now</h2>
+
+                <input type="text" placeholder="Enter pickup location">
+                <input type="text" placeholder="Enter destination">
+
+                <div class="buttons">
+                    <button class="request">Request now</button>
+                    <button class="schedule">Schedule for later</button>
+                </div>
+            </div>
+    </fieldset>
+</body>
+</html>

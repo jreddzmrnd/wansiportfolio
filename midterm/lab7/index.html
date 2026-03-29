@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+        }
+        header{
+            height: 100px;
+            text-align: center;
+            background-color: pink;
+            padding: 10px;
+        }
+        #navbar{
+            background-color: bisque;
+            height: auto;
+            padding: 15px;
+        }
+        #navbar ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #navbar li{
+            float: left;
+        }
+        #navbar li:hover{
+            background-color: rgb(255, 240, 240);
+            transform: scale(1);
+        }
+        #navbar a{
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+            color: black;
+        }
+        #navbar2 ul{
+            list-style-type: none;
+            display: block;
+            float: left;
+            padding: 5px;
+            margin: 10px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        #navbar2 li{
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid rgb(94, 94, 94);
+            margin-bottom: 8px;
+        }
+        #navbar2 li:hover{
+            background-color: rgb(255, 240, 240);
+            transform: scale(1);
+        }
+        #navbar2 a {
+            color: black;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        /* #main{
+            height: auto;   
+        } */
+        aside{
+            text-align: justify;
+            width: 30%;
+            float: left;
+            margin: 0%;
+            height: auto;
+            padding: 10px;
+        }
+        section{
+            text-align: justify;
+            float: left;
+            width: 30%;
+            margin: 0%  ;
+            height: auto;
+            padding: 10px;
+            
+        }
+        article{
+            text-align: justify;
+            float: left;
+            width: 30%;
+            margin: 0%  ;
+            height: auto;
+            padding: 10px;
+        }
+        footer{
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            background-color: pink;
+            clear: both;
+        }
+        @media screen and (max-width: 900px) {
+            aside, section, article{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </nav>
+    <nav id="navbar2">
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="news">News</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="about">About</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h2>Aside</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam libero veniam unde autem architecto enim cupiditate, ducimus dolore similique facilis dicta corporis expedita hic iure nisi ipsam ullam culpa dolores?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores magnam voluptatibus nemo placeat dolore quasi iste qui vel, minus, repudiandae perferendis ut modi nobis a, atque ducimus exercitationem officiis. Ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odio veritatis beatae eligendi, error quis fugit dicta maxime vitae nulla ducimus architecto iste reiciendis. Quae sed explicabo omnis aspernatur impedit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolorem est alias, soluta atque officiis quidem perferendis iste in dolores inventore modi hic similique corporis, harum sit. Dolore, eum! Dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe libero numquam hic dignissimos repellendus, facilis exercitationem ea commodi iure quisquam tenetur vero illo nihil culpa dolorem sapiente perferendis alias?</p>
+    </aside>
+    <section>
+        <H2>Section</H2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quod nemo odio eos reprehenderit accusantium beatae itaque voluptate pariatur obcaecati possimus, vel cupiditate iste tenetur earum, facilis eveniet eaque aperiam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis, illo neque aliquam veniam culpa eaque quam error, iusto corporis asperiores ducimus! Autem expedita eum sequi iste magnam commodi amet?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quidem rerum optio tenetur, voluptate dignissimos ipsam id dolore corrupti cum incidunt reprehenderit, magni, dolorem exercitationem sed eos! Tenetur, quis rerum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia blanditiis aut, tempore molestias repellendus harum corporis. Ratione possimus beatae, cum temporibus tempora officia suscipit quibusdam id vero, corporis nihil accusamus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus deserunt quam, mollitia saepe cupiditate magnam error vitae, nam ipsa, vero nobis fugit assumenda! Molestiae nemo repellendus enim. Et, quis?</p>
+    </section>
+    <article>
+        <h2>Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est optio explicabo repellendus natus, praesentium officiis fugiat amet harum iste dignissimos totam minus laborum quidem dolor repellat quae, quas quo ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti non sequi odio officia odit eaque, ullam eos quasi possimus totam ipsa facilis ipsam alias ad quaerat cumque enim velit! Vitae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque ipsam amet et laudantium quidem, quisquam laboriosam temporibus corporis repudiandae ea vero tenetur soluta quia autem dolor hic. Labore, temporibus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum at totam sed velit, qui distinctio aliquid iste deserunt temporibus eos quidem impedit quia culpa consequuntur eveniet corrupti, ad quis minima!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae asperiores accusantium laudantium. Itaque obcaecati omnis beatae aspernatur similique ab est, quo, consequuntur rerum facilis consectetur debitis quia. Iusto, culpa officia.   </p>
+    </article>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+    
+</body>
+</html>
