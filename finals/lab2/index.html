@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Lab Task 2</title>
+    <style>
+        .part1{width: 50%;}
+        .con1, .con2, .con3, .con4{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+
+        .flex1{background-color: lightblue; width: 200px;}
+        .flex2{background-color: lightpink; width: 75px;}
+
+        .con2flex1{background-color: lightblue; width: 50px;}
+        .con2flex2{background-color: lightpink; flex: 1;}
+        .con2flex3{background-color: lightblue; width: 75px;}
+
+
+        .con3{justify-content: space-between;}
+        .con3flex1, .con3flex2, .con3flex3, .con3flex4{background-color: lightpink;}
+
+        .con4{
+            border: 1px solid gray;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .con4flex1, .con4flex2{background-color: lightpink;}
+        
+
+        header, footer {
+            background: beige;
+            padding: 20px;
+        }
+
+        nav {display: flex;}
+
+        .left, .right {
+            background: green;
+            padding: 50px;
+            border: 5px solid greenyellow;
+        }
+
+        .left {flex: 1;}
+
+        .right {flex: 2;}
+
+        @media screen and (max-width: 400px) {
+            nav {flex-direction: column;}
+            .right {order: 1;}
+            .left {order: 2;}
+        }
+    </style>
+</head>
+<body>
+    <h1>PART 1</h1>
+    <div class="part1">
+    <div class="con1">
+        <div class="flex1">200px</div>
+        <div class="flex2">75px</div>
+    </div>
+
+    <div class="con2">
+        <div class="con2flex1">item1</div>
+        <div class="con2flex2">item2</div>
+        <div class="con2flex3">item3</div>
+    </div>
+
+    <div class="con3">
+        <div class="con3flex1">item1</div>
+        <div class="con3flex2">item2</div>
+        <div class="con3flex3">item3</div>
+        <div class="con3flex4">item4</div>
+    </div>
+
+    <div class="con4">
+        <div class="con4flex1">item1</div>
+        <div class="con4flex2">item2</div>
+    </div>
+    </div>
+
+
+    <h1>PART 2</h1>
+    <header>This is a Header</header>
+
+    <nav>
+        <section class="left">section left-nav</section>
+        <section class="right">section right-nav</section>
+    </nav>
+
+    <footer>This is a footer</footer>
+</body>
+</html>
