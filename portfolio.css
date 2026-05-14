@@ -6,9 +6,9 @@ body{
     background: radial-gradient(circle at top left, #0d1b2a, #020617);
     color: #E5E7EB;
 }
-h1, h2, h3, h4 {
+/* h1, h2, h3, h4 {
     font-family: ;
-}
+} */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -336,7 +336,8 @@ section, .head, footer {
     font-weight: 600;
     text-transform: uppercase;
 }
-.button a {
+.button a,
+.button .play-video-btn {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -354,13 +355,71 @@ section, .head, footer {
 
     color: #1e88e5;
     text-decoration: none;
+    background: transparent;
+    cursor: pointer;
 
     overflow: hidden;
     transition: 0.3s;
 }
 
+    .video-reveal {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-reveal.hidden {
+    display: none;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.close-video-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #1e88e5;
+    border-radius: 50%;
+    background: rgba(13, 27, 42, 0.95);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.close-video-btn:hover {
+    background: #1e88e5;
+    color: #000;
+}
+
+.video-player {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    background: #000;
+}
+
+.button .play-video-btn:hover,
+.button a:hover {
+    color: #fff;
+    background: rgba(30,136,229,0.1);
+}
+
 /* SLIDE BACKGROUND */
-.button a::before {
+.button a::before,
+.button .play-video-btn::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -371,10 +430,12 @@ section, .head, footer {
 }
 
 /* HOVER EFFECT */
-.button a:hover::before {
+.button a:hover::before,
+.button .play-video-btn:hover::before {
     transform: translateX(0);
 }
-.button a:hover {
+.button a:hover,
+.button .play-video-btn:hover {
     color: #fff;
 }
 
