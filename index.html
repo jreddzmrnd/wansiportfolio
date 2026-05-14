@@ -219,27 +219,107 @@
          <div class="project-header finals-header">
         <h3 class="title-center">Finals</h3>
         </div>
-    <div class="projectcards finals">
+    
+        <div class="projectcards finals">
         <div class="pcard">
             <span class="lab">LAB TASK 1</span>
             <h4 class="project-title">CSS Propositions</h4>
-            <span class="coming-soon">Coming Soon</span>
 
-            <div class="button disabled">
-                <a href="" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+            <div class="button">
+                <a href="finals/lab1/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="pcard">
+            <span class="lab">LAB TASK 2</span>
+            <h4 class="project-title">CSS Flexbox</h4>
+
+            <div class="button">
+                <a href="finals/lab2/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="pcard">
+            <span class="lab">LAB TASK 3</span>
+            <h4 class="project-title">Bootstrap Grid</h4>
+
+            <div class="button">
+                <a href="finals/lab3/index.html" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="pcard">
+            <span class="lab">LAB TASK</span>
+            <h4 class="project-title">Pondo Application</h4>
+
+            <div class="button">
+                <a href="https://pondoph.vercel.app" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="pcard video-pcard">
+            <span class="lab">LAB TASK</span>
+            <h4 class="project-title">Video Presentation</h4>
+
+            <div class="button">
+                <button class="play-video-btn" type="button" onclick="playSupermenVideo()"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="pcard">
+            <span class="lab">LAB TASK</span>
+            <h4 class="project-title">Data Files</h4>
+
+            <div class="button">
+                <a href="images/datafiles.png" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
     </section>
+
+        <div id="videoReveal" class="video-reveal hidden">
+            <div class="video-wrapper">
+                <button class="close-video-btn" type="button" onclick="closeSupermenVideo()">×</button>
+                <video id="supermensVideo" class="video-player" preload="none" controls>
+                    <source src="images/supermens.mov">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     
-
-
 
     <!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS --><!-- CONTACTS -->
 
 
 
 
+    <script>
+        function playSupermenVideo() {
+            const reveal = document.getElementById('videoReveal');
+            const video = document.getElementById('supermensVideo');
+            if (reveal.classList.contains('hidden')) {
+                reveal.classList.remove('hidden');
+            }
+            video.load();
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((error) => {
+                    console.warn('Video playback failed:', error);
+                });
+            }
+            video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function closeSupermenVideo() {
+            const reveal = document.getElementById('videoReveal');
+            const video = document.getElementById('supermensVideo');
+            video.pause();
+            video.currentTime = 0;
+            if (!reveal.classList.contains('hidden')) {
+                reveal.classList.add('hidden');
+            }
+        }
+    </script>
     <footer class="contact" id="contact">
         <div>
         <h3 class="contacttitle">THANK YOU!</h3>
